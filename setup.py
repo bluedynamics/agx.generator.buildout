@@ -31,6 +31,9 @@ setup(name="agx.generator.buildout",
       ],
       extras_require = dict(
           ##code-section extras_require
+          test=[
+            'interlude',
+          ]
           ##/code-section extras_require
       ),
       entry_points="""

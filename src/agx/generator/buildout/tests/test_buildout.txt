@@ -21,7 +21,7 @@ Setup configuration and emulate main routine.
     >>> eggprofilepath = \
     ...     pkg_resources.resource_filename('agx.generator.pyegg', subpath)
     
-    >>> subpath = 'profiles/buidlout.profile.uml'
+    >>> subpath = 'profiles/buildout.profile.uml'
     >>> buildoutprofilepath = \
     ...     pkg_resources.resource_filename('agx.generator.buildout', subpath)
     
