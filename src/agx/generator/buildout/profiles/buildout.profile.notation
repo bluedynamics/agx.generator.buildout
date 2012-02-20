@@ -60,7 +60,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w5JaC1unEeGtD5GMZ61r8A"/>
     </children>
     <element xmi:type="uml:Stereotype" href="buildout.profile.uml#_w47-oFunEeGtD5GMZ61r8A"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w5Iy8VunEeGtD5GMZ61r8A" x="357" y="175"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w5Iy8VunEeGtD5GMZ61r8A" x="300" y="175" width="163"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_1NuNkFunEeGtD5GMZ61r8A" type="1026" fontName="Ubuntu" fontHeight="10" lineColor="0">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1Nu0oFunEeGtD5GMZ61r8A" source="ShadowFigure">
@@ -84,7 +84,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1Nu0rlunEeGtD5GMZ61r8A"/>
     </children>
     <element xmi:type="uml:Stereotype" href="buildout.profile.uml#_1Np8IFunEeGtD5GMZ61r8A"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1NuNkVunEeGtD5GMZ61r8A" x="525" y="175"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1NuNkVunEeGtD5GMZ61r8A" x="525" y="175" width="151"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_rziyIVunEeGtD5GMZ61r8A"/>
   <element xmi:type="uml:Profile" href="buildout.profile.uml#_foIlMFunEeGtD5GMZ61r8A"/>

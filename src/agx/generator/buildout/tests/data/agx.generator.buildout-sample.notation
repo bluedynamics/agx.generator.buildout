@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_z8IoEFviEeG1f-Kr3Cp4uw" type="PapyrusUMLClassDiagram" name="ClassDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_8lRBEFviEeG1f-Kr3Cp4uw" type="2007" fontName="Ubuntu" fontHeight="10" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8lSPMFviEeG1f-Kr3Cp4uw" source="ShadowFigure">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lSPMVviEeG1f-Kr3Cp4uw" key="ShadowFigure_Value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8lSPMlviEeG1f-Kr3Cp4uw" source="displayNameLabelIcon">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lSPM1viEeG1f-Kr3Cp4uw" key="displayNameLabelIcon_value" value="false"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8lSPNFviEeG1f-Kr3Cp4uw" source="QualifiedName">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8lSPNVviEeG1f-Kr3Cp4uw" key="QualifiedNameDepth" value="1000"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__izJMFviEeG1f-Kr3Cp4uw" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJPJsFvjEeG1f-Kr3Cp4uw" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJPJsVvjEeG1f-Kr3Cp4uw" key="StereotypeList" value="pyegg::pyegg,buildout::plone_self_contained"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJPwwFvjEeG1f-Kr3Cp4uw" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJPwwVvjEeG1f-Kr3Cp4uw" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NJPwwlvjEeG1f-Kr3Cp4uw" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8lSPNlviEeG1f-Kr3Cp4uw" type="5026"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8lS2QFviEeG1f-Kr3Cp4uw" type="7016">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8lS2QVviEeG1f-Kr3Cp4uw"/>
+    </children>
+    <element xmi:type="uml:Package" href="agx.generator.buildout-sample.uml#_8kZeYFviEeG1f-Kr3Cp4uw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8lRBEVviEeG1f-Kr3Cp4uw" x="114" y="62" width="412" height="264"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_z8IoEVviEeG1f-Kr3Cp4uw"/>
+  <element xmi:type="uml:Model" href="agx.generator.buildout-sample.uml#_pMKgMFunEeGtD5GMZ61r8A"/>
+</notation:Diagram>

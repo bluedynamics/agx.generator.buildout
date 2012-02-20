@@ -1,0 +1,45 @@
+[buildout]
+extensions =
+    mr.developer
+
+unzip = true
+parts =
+    instance
+    omelette
+    zopepy
+
+extends = 
+    http://good-py.appspot.com/release/dexterity/1.1?plone=4.1.2
+
+versions = versions
+develop = .
+
+sources = sources
+sources-dir = ${buildout:directory}/devsrc
+auto-checkout = *
+
+[instance]
+recipe = plone.recipe.zope2instance
+user = admin:admin
+http-address = 8080
+debug-mode = on
+verbose-security = on
+eggs = 
+    Plone
+    pillow
+    {{package}}
+
+zcml =
+    {{package}}
+
+[omelette]
+recipe = collective.recipe.omelette
+eggs = ${instance:eggs}
+
+[zopepy]
+recipe = zc.recipe.egg
+eggs = ${instance:eggs}
+interpreter = zopepy
+scripts = zopepy
+
+[sources]
