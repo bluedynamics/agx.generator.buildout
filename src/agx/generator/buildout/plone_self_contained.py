@@ -10,6 +10,9 @@ def templatepath(name):
 @handler('bootstrappy', 'uml2fs', 'hierarchygenerator',
          'pythonegg', order=20)
 def bootstrappy(self, source, target):
+    if not source.stereotype('buildout:plone_self_contained'):
+        return
+    
     root = target.anchor
     root.factories['bootstrap.py'] = JinjaTemplate
     
@@ -25,6 +28,9 @@ def bootstrappy(self, source, target):
 @handler('buidloutcfg', 'uml2fs', 'hierarchygenerator',
          'pythonegg', order=20)
 def buidloutcfg(self, source, target):
+    if not source.stereotype('buildout:plone_self_contained'):
+        return
+    
     root = target.anchor
     root.factories['buildout.cfg'] = JinjaTemplate
     
