@@ -7,38 +7,26 @@ def templatepath(name):
     return os.path.join(os.path.dirname(__file__), 'templates/%s' % name)
 
 
-@handler('bootstrappy', 'uml2fs', 'hierarchygenerator',
+@handler('ploneselfcontainedbuildout', 'uml2fs', 'hierarchygenerator',
          'pythonegg', order=20)
-def bootstrappy(self, source, target):
-    if not source.stereotype('buildout:plone_self_contained'):
-        return
-    
-    root = target.anchor
-    root.factories['bootstrap.py'] = JinjaTemplate
-    
-    if 'bootstrap.py' in root:
-        bootstrap = root['bootstrap.py']
-    else:
-        bootstrap = JinjaTemplate()
-        root['bootstrap.py'] = bootstrap
-    
-    bootstrap.template = templatepath('bootstrap.py.jinja')
-
-
-@handler('buidloutcfg', 'uml2fs', 'hierarchygenerator',
-         'pythonegg', order=20)
-def buidloutcfg(self, source, target):
+def ploneselfcontainedbuildout(self, source, target):
     if not source.stereotype('buildout:plone_self_contained'):
         return
     
     root = target.anchor
     root.factories['buildout.cfg'] = JinjaTemplate
+    root.factories['bootstrap.py'] = JinjaTemplate
     
     if 'buildout.cfg' in root:
         buildout = root['buildout.cfg']
     else:
-        buildout = JinjaTemplate()
-        root['buildout.cfg'] = buildout
-    
+        buildout = root['buildout.cfg'] = JinjaTemplate()
     buildout.template = templatepath('buildout.cfg.jinja')
     buildout.params['package'] = source.name
+    
+    if 'bootstrap.py' in root:
+        bootstrap = root['bootstrap.py']
+    else:
+        bootstrap = root['bootstrap.py'] = JinjaTemplate()
+    bootstrap.template = templatepath('bootstrap.py.jinja')
+    bootstrap.params = {}
