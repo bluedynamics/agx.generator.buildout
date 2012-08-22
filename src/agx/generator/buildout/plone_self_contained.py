@@ -18,7 +18,7 @@ def ploneselfcontainedbuildout(self, source, target):
     root.factories['bootstrap.py'] = JinjaTemplate
     
     if 'buildout.cfg' in root:
-        buildout = root['buildout.cfg']
+        return #dont overwrite the .cfg
     else:
         buildout = root['buildout.cfg'] = JinjaTemplate()
     buildout.template = templatepath('buildout.cfg.jinja')
