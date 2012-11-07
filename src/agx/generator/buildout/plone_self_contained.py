@@ -8,7 +8,7 @@ def templatepath(name):
 
 
 @handler('ploneselfcontainedbuildout', 'uml2fs', 'hierarchygenerator',
-         'pythonegg', order=20)
+         'pythonegg', order=11)
 def ploneselfcontainedbuildout(self, source, target):
     if not source.stereotype('buildout:plone_self_contained'):
         return
