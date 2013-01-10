@@ -28,4 +28,4 @@ Setup configuration and emulate main routine::
     >>> controller = agx.core.Controller()
     >>> target = controller(modelpaths, outdir)
     >>> target
-    <Directory object '/.../agx.generator.buildout/src/agx/generator/buildout/tests/data/agx.generator.buildout-sample' at ...>
+    <Directory object '/.../agx.generator.buildout/src/agx/generator/buildout/testing/data/agx.generator.buildout-sample' at ...>
