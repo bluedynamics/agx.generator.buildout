@@ -1,32 +1,29 @@
 Test agx.generator.buildout
 ===========================
 
-Setup configuration and emulate main routine.
-::
+Setup configuration and emulate main routine::
 
     >>> from zope.configuration.xmlconfig import XMLConfig
-    >>> import agx.generator.buildout.tests
-    >>> XMLConfig('configure.zcml', agx.generator.buildout.tests)()
-    
+
     >>> import agx.core
     >>> XMLConfig('configure.zcml', agx.core)()
-    
+
     >>> from agx.core.main import parse_options
-    
+
     >>> import os
     >>> modelpath = os.path.join(datadir, 'agx.generator.buildout-sample.uml')
-    
+
     >>> import pkg_resources
     >>> subpath = 'profiles/pyegg.profile.uml'
     >>> eggprofilepath = \
     ...     pkg_resources.resource_filename('agx.generator.pyegg', subpath)
-    
+
     >>> subpath = 'profiles/buildout.profile.uml'
     >>> buildoutprofilepath = \
     ...     pkg_resources.resource_filename('agx.generator.buildout', subpath)
-    
+
     >>> modelpaths = [modelpath, eggprofilepath, buildoutprofilepath]
-    
+
     >>> outdir = os.path.join(datadir, 'agx.generator.buildout-sample')
     >>> controller = agx.core.Controller()
     >>> target = controller(modelpaths, outdir)
