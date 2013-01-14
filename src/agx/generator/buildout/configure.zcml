@@ -2,11 +2,10 @@
            xmlns:agx="http://namespaces.zope.org/agx">
 
   <include package="agx.generator.pyegg" />
-  
+
   <utility
     name="agx.generator.buildout.profilelocation"
     provides="agx.core.interfaces.IProfileLocation"
-    component=".profiles.ProfileLocation"
-  />
+    component=".profiles.ProfileLocation" />
 
 </configure>

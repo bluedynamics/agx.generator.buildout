@@ -12,18 +12,18 @@ def templatepath(name):
 def ploneselfcontainedbuildout(self, source, target):
     if not source.stereotype('buildout:plone_self_contained'):
         return
-    
+
     root = target.anchor
     root.factories['buildout.cfg'] = JinjaTemplate
     root.factories['bootstrap.py'] = JinjaTemplate
-    
+
     if 'buildout.cfg' in root:
-        return #dont overwrite the .cfg
+        return # dont overwrite the .cfg
     else:
         buildout = root['buildout.cfg'] = JinjaTemplate()
     buildout.template = templatepath('buildout.cfg.jinja')
     buildout.params['package'] = source.name
-    
+
     if 'bootstrap.py' in root:
         bootstrap = root['bootstrap.py']
     else:
