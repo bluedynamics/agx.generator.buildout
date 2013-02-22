@@ -2,3 +2,4 @@ src/agx.generator.buildout.egg-info/
 *.pyc
 *.pyo
 src/agx/generator/buildout/testing/data/agx.generator.buildout-sample/
+dist/
