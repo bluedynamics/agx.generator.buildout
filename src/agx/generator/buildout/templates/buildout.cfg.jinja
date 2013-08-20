@@ -9,7 +9,7 @@ parts =
     zopepy
 
 extends = 
-    http://good-py.appspot.com/release/dexterity/1.1?plone=4.1.2
+    http://dist.plone.org/release/4.3-latest/versions.cfg
 
 versions = versions
 develop = .
@@ -25,8 +25,8 @@ http-address = 8080
 debug-mode = on
 verbose-security = on
 eggs = 
+    plone.app.dexterity[grok, relations]
     Plone
-    pillow
     {{package}}
 
 zcml =
